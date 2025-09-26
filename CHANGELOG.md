@@ -5,6 +5,10 @@
 
 ### Features
 
+- update README.zh-CN.md to enhance project overview and feature descriptions ([de48e3f](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/de48e3fee3cf33506a7d693b33f44ef6c48e00ce))
+- enhance README.md to provide detailed project overview and feature descriptions ([64b77c4](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/64b77c4f417cf65431ae5ffdab97d1ab7fcbae7d))
+- update captions in home.py to enhance clarity and reflect new functionalities ([86cce51](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/86cce51a7275560f39f3771e3be1582b83c902d7))
+- update application information in about page to reflect new features ([40929cb](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/40929cb0021a455ca39118c0163c1ecfc611abc4))
 - implement real-time image prediction functionality ([5d4e441](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/5d4e44117e5e80c7c87f2cd3cba969ee01afa072))
 - add real-time prediction page to navigation ([66bf522](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/66bf522b941eb98525ef2460d831d6e3db3e23f7))
 - add Streamlit interface for model testing and sample prediction ([d7cec3a](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/d7cec3a64c3c4b6ad9b27f5136216ad0f1a52f5a))
@@ -43,7 +47,7 @@
 
 ### Chore
 
-- update CHANGELOG.md for version 0.1.0 release ([bcca2a6](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/bcca2a6d675f0fbdd1c369711141fcdee418da41))
+- update CHANGELOG.md for version 0.1.0 release ([354e648](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/354e648a13484d9a83f9224642a04fd6da9999d0))
 - add dog image for testing ([0a235f6](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/0a235f653dc058398b4ba8d49377028ecca4bfd1))
 - update CHANGELOG.md to reflect recent feature additions and bug fixes ([9e159c3](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/9e159c357ee4bbe790492f54ce93541d3a7c957a))
 - update CHANGELOG.md to include recent feature and bug fix entries ([8524879](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/8524879eaf217758cd87b748e186c7f405f7cba2))
