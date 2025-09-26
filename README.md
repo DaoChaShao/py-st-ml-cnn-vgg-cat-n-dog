@@ -7,9 +7,12 @@
 ---
 This project uses the [Cat and Dog dataset](https://www.kaggle.com/datasets/tongpython/cat-and-dog) from Kaggle to train
 and evaluate a Convolutional Neural Network (CNN). The dataset contains images of cats and dogs, suitable for binary
-classification tasks and deep learning experiments. This repository contains a Streamlit application for training,
-testing, and visualizing a Convolutional Neural Network (CNN) for binary image classification (Cats vs Dogs). It
-supports a full workflow from data preprocessing to model evaluation and single image prediction.
+classification tasks and deep learning experiments.
+
+This project is a complete **VGG16-based image classification
+pipeline** implemented with TensorFlow and Streamlit. It provides tools for **data preparation**, **model training**, *
+*testing**, and **real-time prediction**. The application is tailored for **binary image classification** (e.g., cat vs
+dog) and supports visualizing batches of images during training and testing.
 
 **DATA DESCRIPTION**
 ---
@@ -25,16 +28,33 @@ supports a full workflow from data preprocessing to model evaluation and single 
 **FEATURES**
 ---
 
-- **Data Preparation & Augmentation**: Preprocess images using rotation, width/height shift, shear, zoom, and horizontal
-  flip.
-- **Batch Loading**: Load training and testing images in batches, navigate and inspect individual samples.
-- **CNN Training**: Simple yet effective CNN architecture with multiple Conv2D, MaxPooling2D, Flatten, and Dense layers.
-- **Real-time Metrics Logging**: Custom Keras callbacks update Streamlit placeholders for live metrics (loss, accuracy)
-  during training.
-- **Model Testing & Evaluation**: Evaluate model with accuracy, precision, recall, AUC, and F1 score.
-- **Single Image Prediction**: Select a test image and predict its label instantly.
-- **Save & Load Model**: Save trained models and reload them for inference.
-- **Streamlit Integration**: Interactive sidebar settings, sliders, and buttons for smooth workflow.
+- **Data Preparation**
+    - Load image datasets from directories.
+    - Split training and validation sets with customizable ratio.
+    - Batch processing for memory efficiency.
+    - Preview batches and individual images with labels.
+
+- **Data Augmentation**
+    - Random horizontal flipping.
+    - Random rotation, zoom, translation, and hue adjustments.
+    - Preprocessing compatible with VGG16.
+
+- **Model Training**
+    - Transfer learning using pre-trained VGG16 convolutional base.
+    - Freeze convolutional layers to speed up training.
+    - Fully connected layers with dropout for binary classification.
+    - Visualize training metrics in real-time via Streamlit placeholders.
+    - Save and delete the trained model easily.
+
+- **Model Testing**
+    - Evaluate model performance on test dataset.
+    - Metrics: Accuracy, Precision, Recall, AUC, F1-Score.
+    - Preview test batches and individual images with predicted and true labels.
+
+- **Real-Time Prediction**
+    - Upload an image for immediate prediction.
+    - Display the predicted label alongside the image.
+    - Reset and re-upload functionality for multiple predictions.
 
 **QUICK START**
 ---
@@ -44,7 +64,7 @@ supports a full workflow from data preprocessing to model evaluation and single 
 3. Run the application with the command `streamlit run main.py`.
 4. You can also try the application by visiting the following
    link:  
-   [![Static Badge](https://img.shields.io/badge/Open%20in%20Streamlit-Daochashao-red?style=for-the-badge&logo=streamlit&labelColor=white)](https://cnn-cat-n-dog.streamlit.app/)
+   [![Static Badge](https://img.shields.io/badge/Open%20in%20Streamlit-Daochashao-red?style=for-the-badge&logo=streamlit&labelColor=white)](https://vgg-cat-n-dog.streamlit.app/)
 
 **LARGE FILE STORAGE (LFS)**
 ---
