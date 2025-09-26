@@ -6,6 +6,7 @@
 # @File     :   helper.py
 # @Desc     :
 
+from numpy import expand_dims
 from tensorflow.data import AUTOTUNE, experimental
 from tensorflow.keras import Sequential, layers
 from tensorflow.keras.callbacks import Callback
@@ -225,14 +226,18 @@ def vgg16_data_augmenter() -> Sequential:
     ])
 
 
-def single_data_loader(img_path: str, img_height: int = 224, img_width: int = 224, batch_size: int = 1):
+def single_data_loader(img_path: str, img_height: int = 224, img_width: int = 224, normalise: bool = False):
     # Load and resize the image
     img = load_img(img_path, target_size=(img_height, img_width))
     img_arr = img_to_array(img)
-    img_batch = img_arr.resize(batch_size, *img_arr.shape)
+    # Create a batch dimension
+    img_batch = expand_dims(img_arr, axis=0).astype("float32")
 
-    # Preprocess the image for VGG16
-    img_preprocessed = preprocess_input(img_batch)
+    if normalise:
+        # Normalise the image data
+        img_preprocessed = preprocess_input(img_batch)
+    else:
+        img_preprocessed = img_batch
     print(type(img_preprocessed), img_preprocessed.shape)
 
     return img_preprocessed
