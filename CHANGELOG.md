@@ -5,6 +5,11 @@
 
 ### Features
 
+- implement main function to configure layout and set pages for the application ([136f845](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/136f845fd3390d473ab1b7cbe537dd2ae1f6b82e))
+- add layout configuration and sidebar navigation for CNN app ([518d606](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/518d606718fe2ddc9f4b592bf51303df2e09a2bb))
+- enhance home.py with introduction and features overview for CNN app ([c6e7685](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/c6e7685998353553dc71cf4e9438b7a8a738bcb1))
+- enhance about.py with application information and features overview ([7fe3d47](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/7fe3d475d34cab8c63311e97ab7c5e8e306ec80e))
+- add CHANGELOG.md with initial version and feature list ([ca1be87](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/ca1be87b3e7c65140b8d47fe12339b90f1a46b48))
 - add train.py with initial file structure and metadata ([a340dc5](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/a340dc5c0cc9086fa93d8758cdfa9c7629ac21c5))
 - add test.py with initial file structure and metadata ([0efa93d](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/0efa93d49da2fbe2eef9741bf36817be89b12474))
 - add requirements.txt with project dependencies ([87be6c7](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/87be6c7c7f454c8ab52da7fb8ca944695656666a))
