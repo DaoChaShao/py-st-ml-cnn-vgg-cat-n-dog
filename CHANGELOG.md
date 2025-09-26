@@ -5,6 +5,7 @@
 
 ### Features
 
+- add Streamlit interface for model testing and sample prediction ([d7cec3a](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/d7cec3a64c3c4b6ad9b27f5136216ad0f1a52f5a))
 - implement Streamlit interface for VGG16 model training and visualization ([91c07fd](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/91c07fd1c7a697a3c02052f86f74f4d157166f1d))
 - enhance VGG16DataProcessor with data normalization and augmentation methods ([e95a750](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/e95a750d5211bfcf2044fc75fe581d61e72efff3))
 - add Streamlit interface for data preparation and visualization ([2e7890d](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/2e7890d0e1b32a31e69d4820c2e7adf92cb4693d))
@@ -34,10 +35,12 @@
 
 ### Bug Fixes
 
+- update default batch size in data preparation to improve performance ([e89eebc](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/e89eebc0b03c77856fb27a378d19c78b6786de0f))
 - remove unused split_rate parameter in TEST data loading ([713174a](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/713174aeb90eee71fc4d8813996c8c6de8f6e017))
 
 ### Chore
 
+- update CHANGELOG.md to include recent feature and bug fix entries ([8524879](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/8524879eaf217758cd87b748e186c7f405f7cba2))
 - update CHANGELOG.md to reflect recent feature additions and documentation updates ([fa8276e](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/fa8276e3f126b7847b14a5e7e2b90238e1b9e3ef))
 - update CHANGELOG.md to include recent documentation updates and feature enhancements ([ee41454](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/ee41454fdd095344b81f5d2b303f76dec2030acc))
 - update CHANGELOG.md with recent feature additions and enhancements ([02cfe59](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/02cfe592a20a2bd908abd9950bf4613fabcb612d))
@@ -46,4 +49,9 @@
 
 - update README.zh-CN.md to reflect changes in file tracking and push commands ([f64e2d7](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/f64e2d7ea050273995e3a4baebdf071f8cf985db))
 - update README.md to reflect branch name changes from 'main' to 'master' ([f8b3071](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/f8b30716406d1f544b200a5d6eb84d633344b483))
+
+### Code Refactoring
+
+- update callback class name for clarity and adjust default epochs in training ([5ee6ff9](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/5ee6ff94adf0328ccf31f9264a1804c27e87bec4))
+- rename Keras callback classes for clarity and consistency ([a441179](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/a44117996200c61d68e88d8745095345a23dcdb6))
 
