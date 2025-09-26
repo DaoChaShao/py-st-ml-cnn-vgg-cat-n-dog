@@ -37,11 +37,13 @@
 
 ### Bug Fixes
 
+- update test image caption for clarity ([2b2d042](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/2b2d0428bb0ce23b7b71c7c95acdb4367327b4bc))
 - update default batch size in data preparation to improve performance ([e89eebc](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/e89eebc0b03c77856fb27a378d19c78b6786de0f))
 - remove unused split_rate parameter in TEST data loading ([713174a](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/713174aeb90eee71fc4d8813996c8c6de8f6e017))
 
 ### Chore
 
+- update CHANGELOG.md for version 0.1.0 release ([bcca2a6](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/bcca2a6d675f0fbdd1c369711141fcdee418da41))
 - add dog image for testing ([0a235f6](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/0a235f653dc058398b4ba8d49377028ecca4bfd1))
 - update CHANGELOG.md to reflect recent feature additions and bug fixes ([9e159c3](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/9e159c357ee4bbe790492f54ce93541d3a7c957a))
 - update CHANGELOG.md to include recent feature and bug fix entries ([8524879](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/8524879eaf217758cd87b748e186c7f405f7cba2))
