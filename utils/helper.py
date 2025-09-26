@@ -7,6 +7,7 @@
 # @Desc     :
 
 from tensorflow.data import AUTOTUNE, experimental
+from tensorflow.keras import Sequential, layers
 from tensorflow.keras.callbacks import Callback
 from tensorflow.keras.utils import image_dataset_from_directory
 from tensorflow.keras.applications.vgg16 import preprocess_input
@@ -128,12 +129,21 @@ class StTFKLoggerForBinaryLabels(Callback):
 
 
 class VGG16DataProcessor(object):
-    """ A class to handle data processing for VGG16 model. """
+    """ A class to handle data processing for VGG16 model.
+    :return: None
+    """
 
     def __init__(self):
         self._dataset = None
 
     def data_loader(self, data_path: str, batch_size: int, seed: int, split_rate: float | None = 0.2):
+        """ Load image data from a directory.
+        :param data_path: the path to the image directory
+        :param batch_size: the size of each data batch
+        :param seed: the random seed for shuffling
+        :param split_rate: the proportion of the dataset to include in the validation split
+        :return: None
+        """
         if "train" in data_path:
             shuffle: bool = True
             val_split: float | None = split_rate
@@ -157,6 +167,9 @@ class VGG16DataProcessor(object):
         )
 
     def data_normalizer(self):
+        """ Normalize the image data using VGG16 preprocessing.
+        :return: None
+        """
         if self._dataset is not None:
             self._dataset = self._dataset.map(lambda x, y: (preprocess_input(x), y))
             self._dataset = self._dataset.prefetch(AUTOTUNE)
@@ -192,6 +205,24 @@ class VGG16DataProcessor(object):
             for images, labels in self._dataset.take(1):
                 return f"Dataset: Image Shape in First Batch={images.shape}, Labels Shape in First Batch={labels.shape}"
         return "Dataset is None"
+
+    def getter(self):
+        if self._dataset is not None:
+            return self._dataset
+        raise ValueError("Dataset is None")
+
+
+def vgg16_data_augmenter() -> Sequential:
+    """ Create a data augmentation pipeline for VGG16 model.
+    :return: A Sequential model containing data augmentation layers.
+    """
+    return Sequential([
+        layers.RandomFlip("horizontal"),
+        layers.RandomRotation(0.1),
+        layers.RandomZoom(0.1),
+        layers.RandomTranslation(0.1, 0.1),
+        layers.RandomHue(0.1),
+    ])
 
 
 def single_data_loader(img_path: str, img_height: int = 224, img_width: int = 224, batch_size: int = 1):
