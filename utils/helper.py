@@ -51,7 +51,7 @@ class Timer(object):
         return f"{self._description} has NOT started."
 
 
-class StTFKLoggerForCategoricalLabels(Callback):
+class StTFKLoggerFor5Callbacks(Callback):
     """ Custom Keras Callback to log training metrics and update Streamlit placeholders.
     :param num_placeholders: a dictionary of Streamlit placeholders for metrics
     :return: None
@@ -91,7 +91,7 @@ class StTFKLoggerForCategoricalLabels(Callback):
         return self._history
 
 
-class StTFKLoggerForBinaryLabels(Callback):
+class StTFKLoggerFor2Callbacks(Callback):
     """ Custom Keras Callback to log training metrics and update Streamlit placeholders.
     :param num_placeholders: a dictionary of Streamlit placeholders for metrics
     :return: None
