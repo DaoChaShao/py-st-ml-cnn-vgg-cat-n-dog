@@ -52,7 +52,7 @@ with sidebar:
                     session_state["TEST"] = VGG16DataProcessor()
                     # Load the image data
                     session_state["TRAIN"].data_loader(TRAIN_DATA_PATH, batch_size, random_state, split_rate)
-                    session_state["TEST"].data_loader(TEST_DATA_PATH, batch_size, random_state, split_rate)
+                    session_state["TEST"].data_loader(TEST_DATA_PATH, batch_size, random_state)
             rerun()
     else:
         empty_messages.success("Data loaded successfully! You can preview samples below.")
