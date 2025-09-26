@@ -14,7 +14,7 @@ from streamlit import (empty, sidebar, subheader, session_state,
 from tensorflow.keras import models, layers, metrics
 
 from utils.config import MODEL_SAVE_PATH
-from utils.helper import Timer, vgg16_data_augmenter, StTFKLoggerForCategoricalLabels
+from utils.helper import Timer, vgg16_data_augmenter, StTFKLoggerFor5Callbacks
 
 empty_messages: empty = empty()
 empty_result_title: empty = empty()
@@ -59,12 +59,15 @@ with sidebar:
             "val_auc": placeholder_auc_val
         }
         # Initialise the callback for visualisation
-        callback = StTFKLoggerForCategoricalLabels(placeholders)
+        callback = StTFKLoggerFor5Callbacks(placeholders)
+
+        # Normalise the data
+        # session_state["TRAIN"].data_normalizer()
 
         if session_state["model"] is None:
             epochs: int = number_input(
                 "Epochs (number of training iterations)",
-                1, 100, value=5, step=1,
+                1, 100, value=3, step=1,
                 help="Set the number of epochs for training the model.",
             )
 
