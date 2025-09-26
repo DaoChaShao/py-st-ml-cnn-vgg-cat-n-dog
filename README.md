@@ -59,12 +59,12 @@ instructions as follows are only used to upload the large file to the remote rep
 5. Add the `data/` file to version control with the command `git add data/` or using the UI interface.
 6. Commit the changes with the command `git commit -m "Track large files with Git LFS"` or using the UI interface.
 7. Use the command `git lfs ls-files` to list all files being tracked by Git LFS.
-8. Push the changes to the remote repository with the command `git push origin main` or using the UI interface.
+8. Push the changes to the remote repository with the command `git push origin master` or using the UI interface.
 9. If you change the name of remote while initialising the repository, you need to change the `origin` to your remote
-   name, such as `GitHub` or `xxx`, in the command `git push -u GitHub main` or `git push -u GitHub main`. Besides, if
-   you change the branch name, you also need to change the `main` to your branch name, such as `master` or `xxx`, in the
-   command `git push -u GitHub master` or `git push -u xxx master`. Therefore, it is better to keep the default names of
-   remote and branch.
+   name, such as `GitHub` or `xxx`, in the command `git push -u GitHub master` or `git push -u GitHub master`. Besides,
+   if you change the branch name, you also need to change the `master` to your branch name, such as `main` or `xxx`, in
+   the command `git push -u GitHub main` or `git push -u xxx main`. Therefore, it is better to keep the default names of
+   remote and branch, if you are not familiar with it.
 10. If you fail to push the large files, you might have used 2FA authentication. The normal push of the button of the
     UI interface is invalid. You can try to use a **personal access token (PAT)** instead of accessing the GitHub
     repository. If you have had the token, run the command `git push origin main` first. Then, enter the `username` and
@@ -75,8 +75,12 @@ instructions as follows are only used to upload the large file to the remote rep
     push the large files, you might fail to push the future changes with the `push` button of the UI. In this case, you
     can close the LFS push function by running the following command:
     ```bash
-    git config lfs.<remote-url>/info/lfs.locksverify
+    git config lfs.<remote-url>/info/lfs.locksverify false
     ```
+    You can check the LFS connection status by running the following command:
+    ```bash
+    git config --get lfs.<remote-url>/info/lfs.locksverify
+    ```  
     Then, you can use the `push` button of the UI to push the changes.
 13. You must **install Git LFS locally** before you clone the repository if you plan to get the
     **full size of the data**. Otherwise, you will only get the pointer files. you can run the following command to
