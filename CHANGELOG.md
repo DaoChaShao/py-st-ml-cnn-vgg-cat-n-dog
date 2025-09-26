@@ -5,6 +5,8 @@
 
 ### Features
 
+- implement Streamlit interface for VGG16 model training and visualization ([91c07fd](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/91c07fd1c7a697a3c02052f86f74f4d157166f1d))
+- enhance VGG16DataProcessor with data normalization and augmentation methods ([e95a750](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/e95a750d5211bfcf2044fc75fe581d61e72efff3))
 - add Streamlit interface for data preparation and visualization ([2e7890d](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/2e7890d0e1b32a31e69d4820c2e7adf92cb4693d))
 - implement custom Keras callbacks and data processing for VGG16 model ([c3c2b35](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/c3c2b354e45b6127a27b09c6e668ef5a6cca5127))
 - add configuration file for data paths and model saving ([98234cc](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/98234cc8ee6e74649b6ca135c671858b8bed469a))
@@ -30,8 +32,13 @@
 - add .gitignore to exclude IDE and environment files ([1d653eb](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/1d653ebeae3711da191d86c6788e77321f4afb0c))
 - add .gitignore to exclude IDE files and environment settings ([b0c7c1a](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/b0c7c1a388417a44074ca5c4cce7a96752ef1d87))
 
+### Bug Fixes
+
+- remove unused split_rate parameter in TEST data loading ([713174a](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/713174aeb90eee71fc4d8813996c8c6de8f6e017))
+
 ### Chore
 
+- update CHANGELOG.md to reflect recent feature additions and documentation updates ([fa8276e](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/fa8276e3f126b7847b14a5e7e2b90238e1b9e3ef))
 - update CHANGELOG.md to include recent documentation updates and feature enhancements ([ee41454](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/ee41454fdd095344b81f5d2b303f76dec2030acc))
 - update CHANGELOG.md with recent feature additions and enhancements ([02cfe59](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/02cfe592a20a2bd908abd9950bf4613fabcb612d))
 
