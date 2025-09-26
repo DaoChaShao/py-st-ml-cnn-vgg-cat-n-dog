@@ -27,3 +27,12 @@
 - add .gitignore to exclude IDE and environment files ([1d653eb](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/1d653ebeae3711da191d86c6788e77321f4afb0c))
 - add .gitignore to exclude IDE files and environment settings ([b0c7c1a](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/b0c7c1a388417a44074ca5c4cce7a96752ef1d87))
 
+### Chore
+
+- update CHANGELOG.md with recent feature additions and enhancements ([02cfe59](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/02cfe592a20a2bd908abd9950bf4613fabcb612d))
+
+### Docs
+
+- update README.zh-CN.md to reflect changes in file tracking and push commands ([f64e2d7](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/f64e2d7ea050273995e3a4baebdf071f8cf985db))
+- update README.md to reflect branch name changes from 'main' to 'master' ([f8b3071](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/f8b30716406d1f544b200a5d6eb84d633344b483))
+
