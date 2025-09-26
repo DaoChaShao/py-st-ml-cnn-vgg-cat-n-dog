@@ -49,13 +49,13 @@
 2. 使用命令`git lfs install`在仓库中初始化Git LFS。**仅需一次**。
 3. 使用命令`git lfs track "*.jpg"`跟踪大文件（您可以将`*.jpg`替换为适当的文件扩展名）。
 4. 使用命令`git add .gitattributes`或图形界面将`.gitattributes`文件添加到版本控制中。
-5. 使用命令`git add creditcard.csv`或图形界面将`creditcard.csv`文件添加到版本控制中。
+5. 使用命令`git add data/`或图形界面将`data/`文件添加到版本控制中。
 6. 使用命令`git commit -m "Track large files with Git LFS"`或图形界面提交更改。
 7. 使用命令`git lfs ls-files`列出所有由Git LFS跟踪的文件。
-8. 使用命令`git push origin main`或图形界面将更改推送到远程仓库。
-9. 如果您在初始化仓库时更改了远程名称，则需要在命令`git push origin main`中将`origin`更改为您的远程名称，例如`GitHub`或
-   `xxx`，如`git push -u GitHub main`或`git push -u xxx main`。此外，如果您更改了分支名称，也需要将`main`更改为您的分支名称，例如
-   `master`或`xxx`，如`git push -u GitHub master`或`git push -u xxx master`。 因此，最好保持远程和分支的默认名称。
+8. 使用命令`git push origin master`或图形界面将更改推送到远程仓库。
+9. 如果您在初始化仓库时更改了远程名称，则需要在命令`git push origin master`中将`origin`更改为您的远程名称，例如`GitHub`或
+   `xxx`，如`git push -u GitHub master`或`git push -u xxx master`。此外，如果您更改了分支名称，也需要将`master`更改为您的分支名称，例如
+   `main`或`xxx`，如`git push -u GitHub main`或`git push -u xxx maim`。 因此，如果您不熟悉远程和分支，最好保留默认名称。
 10. 如果您推送大文件失败，可能是因为您使用了双重身份验证。UI 界面按钮的正常推送无效。您可以尝试使用**个人访问令牌 (PAT)**
     来代替访问 GitHub 资源库。如果您已经拥有令牌，请先运行命令 `git push origin main`。然后，输入 `username` 和 `token`
     作为密码。
@@ -64,6 +64,10 @@
     则可能无法使用 UI 的 `push` 按钮推送将来的更改。在这种情况下，您可以通过运行以下命令关闭 LFS 推送功能：
     ```bash
     git config lfs.<remote-url>/info/lfs.locksverify
+    ```
+    您可以通过运行以下命令检查 LFS 连接状态：
+    ```bash
+    git config --get lfs.<remote-url>/info/lfs.locksverify
     ```
     然后，您可以使用 UI 的 `push` 按钮来推送更改。
 13. 在克隆仓库之前，**必须**先在**本地安装 Git LFS**，如果你打算获取**完整的数据文件**。否则，你只能得到指针文件。
