@@ -100,7 +100,7 @@ with sidebar:
                 )
                 caption(f"Note: the index is in [0, {amount_test}].")
                 image_test, label_test = session_state["TEST"][index_batch_test, index_item_test]
-                caption(f"Note: the image at test index **5** of batch **15** will surprise you.")
+                caption(f"Note: the image named **1.dog.0** in tester directory will surprise you.")
 
                 if button("Predict the Selected Sample", type="primary", width="stretch"):
                     with spinner("Predicting the selected sample", show_time=True, width="stretch"):
