@@ -34,7 +34,7 @@ with sidebar:
 
         batch_size: int = select_slider(
             "Batch Size (for splitting data)",
-            [16, 32, 64, 128, 256, 512], value=32,
+            [16, 32, 64, 128, 256, 512], value=64,
             help="Set the batch size for splitting data into manageable chunks.",
         )
 
