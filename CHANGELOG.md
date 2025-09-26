@@ -5,6 +5,9 @@
 
 ### Features
 
+- add Streamlit interface for data preparation and visualization ([2e7890d](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/2e7890d0e1b32a31e69d4820c2e7adf92cb4693d))
+- implement custom Keras callbacks and data processing for VGG16 model ([c3c2b35](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/c3c2b354e45b6127a27b09c6e668ef5a6cca5127))
+- add configuration file for data paths and model saving ([98234cc](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/98234cc8ee6e74649b6ca135c671858b8bed469a))
 - implement main function to configure layout and set pages for the application ([136f845](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/136f845fd3390d473ab1b7cbe537dd2ae1f6b82e))
 - add layout configuration and sidebar navigation for CNN app ([518d606](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/518d606718fe2ddc9f4b592bf51303df2e09a2bb))
 - enhance home.py with introduction and features overview for CNN app ([c6e7685](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/c6e7685998353553dc71cf4e9438b7a8a738bcb1))
@@ -29,6 +32,7 @@
 
 ### Chore
 
+- update CHANGELOG.md to include recent documentation updates and feature enhancements ([ee41454](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/ee41454fdd095344b81f5d2b303f76dec2030acc))
 - update CHANGELOG.md with recent feature additions and enhancements ([02cfe59](https://github.com/DaoChaShao/py-st-ml-cnn-vgg-cat-n-dog/commit/02cfe592a20a2bd908abd9950bf4613fabcb612d))
 
 ### Docs
